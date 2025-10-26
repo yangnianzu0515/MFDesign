@@ -1,11 +1,11 @@
  # MFDesign: Antibody Sequence and Structure Co-design
 
-[![Paper](https://img.shields.io/badge/Paper-ICLR%202025%20GEM%20Workshop-blue)](https://openreview.net/pdf/fa449e7c0c04e638dab5d8b500e85cbb30f29694.pdf)
+[![Paper](https://img.shields.io/badge/Paper-Neurips%202025-blue)](https://openreview.net/pdf/fa449e7c0c04e638dab5d8b500e85cbb30f29694.pdf)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 **Repurposing AlphaFold3-like Protein Folding Models for Antibody Sequence and Structure Co-design**
 
-*Accepted at ICLR 2025 GEM Workshop*
+*Accepted at Neurips 2025*
 
 ## Overview
 
@@ -32,11 +32,7 @@ cd MFDesign
 ```
 
 2. Download Data and Models:
-We provide all processed data, raw source data, and pre-trained models in a separate repository on Hugging Face Hub. You can find them in the `./data` and `./model` directories within this repository. To download them, please ensure you have [Git LFS](https://git-lfs.github.com/) installed and then run:
-```bash
-git clone https://huggingface.co/clorf6/MF-Design # model
-git clone https://huggingface.co/datasets/clorf6/MF-Design # data
-```
+We provide all processed data, raw source data, and pre-trained models in a separate repository on Hugging Face Hub. You can find them in the ./data and ./model directories within the corresponding repository. The model repository and data repository are available at [MF-Design Model](https://huggingface.co/clorf6/MF-Design) and [MF-Design Data](https://huggingface.co/datasets/clorf6/MF-Design), respectively. After downloading the data, you will also need to unzip the compressed files.
 
 3. Modify the system path in `train.py` and `predict.py` to point to your codebase:
 ```python
@@ -80,7 +76,7 @@ If you use MFDesign in your research, please cite our paper:
 @article{mf_design_2025,
   title={Repurposing AlphaFold3-like Protein Folding Models for Antibody Sequence and Structure Co-design},
   author={Nianzu Yang and Songlin Jiang and Jian Ma and Huaijin Wu and Shuangjia Zheng and Wengong Jin and Junchi Yan},
-  journal={ICLR 2025 GEM Workshop},
+  journal={Neurips 2025},
   year={2025},
   url={https://openreview.net/pdf/fa449e7c0c04e638dab5d8b500e85cbb30f29694.pdf}
 }
