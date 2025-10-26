@@ -34,7 +34,9 @@ For each chain, this is represented by a `protein`, where `id` is the id number 
 
 `ground_truth` is the real sequence of the corresponding chain, which is provided for calculating the MSA and the recovery rate of the generated results, and will not be inputted to the model, and the calculated MSA will go through a filter to filt out the sequences with high similarity to the CDR region, so there is no need to worry about data leakage problems. 
 
-Note that `ground_truth` is optional, if `ground_truth` is omitted as an input, the MSA will be computed using the `sequence` containing the mask, and the recovery rate will not be computed in the generated result. However, it is highly recommended to provide `ground_truth` to compute a better quality MSA, which will lead to better quality results. (We found that if the MSA is not filtered using a 0.2 similarity threshold against the original sequence, the results will be slightly worse than those reported in the paper. This similarity threshold strongly affects the density and distribution of the input MSA (e.g., a 0.8 similarity threshold yields nearly twice as many MSA sequences as a 0.2 threshold). Therefore, changing this input will lead to a slight performance degradation due to the distribution shift.)
+Note that `ground_truth` is optional, if `ground_truth` is omitted as an input, the MSA will be computed using the `sequence` containing the mask, and the recovery rate will not be computed in the generated result. However, it is highly recommended to provide `ground_truth` to compute a better quality MSA, which will lead to better quality results. 
+
+**Remark**: We found that if the MSA is not filtered using a **0.2 similarity threshold** against the **original sequence**, the results will be slightly worse than those reported in the paper. This similarity threshold strongly affects the density and distribution of the input MSA (e.g., a 0.8 similarity threshold yields nearly twice as many MSA sequences as a 0.2 threshold). Therefore, changing this input will lead to a slight performance degradation due to the distribution shift.
 
 ## Options
 
