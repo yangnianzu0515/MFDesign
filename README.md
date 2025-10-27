@@ -1,11 +1,11 @@
  # MFDesign: Antibody Sequence and Structure Co-design
 
-[![Paper](https://img.shields.io/badge/Paper-Neurips%202025-blue)](https://openreview.net/pdf/fa449e7c0c04e638dab5d8b500e85cbb30f29694.pdf)
+[![Paper](https://img.shields.io/badge/Paper-NeurIPS%202025-blue)](https://openreview.net/pdf/fa449e7c0c04e638dab5d8b500e85cbb30f29694.pdf)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 **Repurposing AlphaFold3-like Protein Folding Models for Antibody Sequence and Structure Co-design**
 
-*Accepted at Neurips 2025*
+*Accepted at NeurIPS 2025*
 
 ## Overview
 
@@ -73,12 +73,11 @@ For local MSA data processing instructions, see [scripts/process/local_msa/note.
 If you use MFDesign in your research, please cite our paper:
 
 ```bibtex
-@article{mf_design_2025,
+@article{MFDesign,
   title={Repurposing AlphaFold3-like Protein Folding Models for Antibody Sequence and Structure Co-design},
   author={Nianzu Yang and Songlin Jiang and Jian Ma and Huaijin Wu and Shuangjia Zheng and Wengong Jin and Junchi Yan},
-  journal={Neurips 2025},
-  year={2025},
-  url={https://openreview.net/pdf/fa449e7c0c04e638dab5d8b500e85cbb30f29694.pdf}
+  journal={NeurIPS 2025},
+  year={2025}
 }
 ```
 
