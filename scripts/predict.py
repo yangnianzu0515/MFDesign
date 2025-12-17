@@ -826,7 +826,7 @@ def run():
     parser.add_argument(
         "--processed_msa_dir",
         type=str,
-        default="./data/msa",
+        default=None,
         help="Path to processed msa data.",
     )
 
